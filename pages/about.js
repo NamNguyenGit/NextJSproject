@@ -3,8 +3,10 @@ import Layout from "../components/Layout";
 const myStyle = { color: "red", borderLeft: "5px solid black", padding: "5px" };
 
 const About = () => (
-  <Layout>
-     
+  <Layout
+    mainTitle="My About Page build with Next"
+    footer={` This is build by Nam `}
+  >
     <h2>About page</h2>
     <Link href="/">
       <a style={myStyle}> Home page</a>

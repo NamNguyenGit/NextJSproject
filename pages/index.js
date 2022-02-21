@@ -3,14 +3,17 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 
 const Index = () => (
-  <Layout>
+  <Layout
+    mainTitle="My Home Page build with Next"
+    footer={` Copyright ${new Date().getFullYear()} `}
+  >
     <Head>
       <title>Home Page</title>
       <meta name="description" content="React-App with Next JS" />
       <meta name="keywords" content="next react " />
       <meta name="author" content="Nam" />
     </Head>
-   
+
     <h1>Hello from next</h1>
     <Link href="/about">
       <a> About page</a>
