@@ -1,16 +1,16 @@
 import Link from "next/link";
 import Head from "next/head";
-import Nev from "../components/Nev";
+import Layout from "../components/Layout";
 
 const Index = () => (
-  <div>
+  <Layout>
     <Head>
       <title>Home Page</title>
       <meta name="description" content="React-App with Next JS" />
       <meta name="keywords" content="next react " />
       <meta name="author" content="Nam" />
     </Head>
-    <Nev />
+   
     <h1>Hello from next</h1>
     <Link href="/about">
       <a> About page</a>
@@ -21,7 +21,7 @@ const Index = () => (
       fuga sapiente temporibus provident error maiores, minus sunt illo quia
       obcaecati!
     </p>
-  </div>
+  </Layout>
 );
 
 export default Index;
