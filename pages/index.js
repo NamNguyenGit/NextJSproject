@@ -1,11 +1,16 @@
 import Link from "next/link";
+import Head from "next/head";
 import Nev from "../components/Nev";
-
-
 
 const Index = () => (
   <div>
-     <Nev />
+    <Head>
+      <title>Home Page</title>
+      <meta name="description" content="React-App with Next JS" />
+      <meta name="keywords" content="next react " />
+      <meta name="author" content="Nam" />
+    </Head>
+    <Nev />
     <h1>Hello from next</h1>
     <Link href="/about">
       <a> About page</a>
