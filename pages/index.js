@@ -1,6 +1,11 @@
 import Link from "next/link";
+import Nev from "../components/Nev";
+
+
+
 const Index = () => (
   <div>
+     <Nev />
     <h1>Hello from next</h1>
     <Link href="/about">
       <a> About page</a>

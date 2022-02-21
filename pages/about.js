@@ -1,9 +1,10 @@
 import Link from "next/link";
-
+import Nev from "../components/Nev";
 const myStyle = { color: "red", borderLeft: "5px solid black", padding: "5px" };
 
 const About = () => (
   <div>
+      <Nev />
     <h2>About page</h2>
     <Link href="/">
       <a style={myStyle}> Home page</a>
