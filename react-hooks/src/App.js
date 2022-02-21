@@ -34,18 +34,31 @@ const App = () => {
     setUrl(`http://hn.algolia.com/api/v1/search?query=${searchQuery}`);
   };
 
+  const showLoading = () => {
+    if (loading) {
+      return <h2> Loading ... </h2>;
+    } else {
+    }
+  };
+
+  const SearchForm = () => {
+    <form onSubmit={handleSubmit}>
+      <input type="text" value={searchQuery} onChange={handleChange} />
+      <button>Search</button>
+    </form>;
+  };
+
+  const showNews = () => {
+    return news.map((blog, index) => <p key={index}>{blog.title}</p>);
+  };
+
   return (
     <>
       <div>
         <h2>News</h2>
-        {loading ? <h2> Loading... </h2> : ""}
-        <form onSubmit={handleSubmit}>
-          <input type="text" value={searchQuery} onChange={handleChange} />
-          <button>Search</button>
-        </form>
-        {news.map((blog, index) => (
-          <p key={index}>{blog.title}</p>
-        ))}
+        {showLoading()}
+        {SearchForm()}
+        {showNews()}
       </div>
     </>
   );
