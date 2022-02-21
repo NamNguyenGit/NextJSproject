@@ -9,9 +9,7 @@ const Index = () => (
   >
     <Head>
       <title>Home Page</title>
-      <meta name="description" content="React-App with Next JS" />
-      <meta name="keywords" content="next react " />
-      <meta name="author" content="Nam" />
+     
     </Head>
 
     <h1>Hello from next</h1>
